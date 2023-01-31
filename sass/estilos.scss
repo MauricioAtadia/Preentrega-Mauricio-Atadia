@@ -1,0 +1,230 @@
+/* selector: etiqueta html, class, id */
+    /* propiedad: valor color:red */
+    
+    @import "variableGlobal";
+    @import "general";
+    @import "parrafos";
+    @import "operaciones";
+
+    /*comienzo a dar estilos mobile first 0-500*/
+
+    /* NAV */
+
+    .blue{
+        background-color: blue;
+    }   
+    
+    .flex{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /* estilos de texto */
+
+    h1, h2, h3, h4, h5{
+        font-family: 'Arial' , 'sans-serif';
+        font-style: normal;
+        text-align: center;
+        font-size: 25px;
+        color: rgb(3, 3, 105);
+        padding: 30px;
+        margin: 10px 5px 10px 5px
+    }
+    
+    
+
+    ul li{
+        list-style-type: none;
+        font-family: 'roboto','sans-serif';
+        display: inline-block;
+        justify-content: space-between;
+        padding: 25px;
+    }
+    a{
+        text-decoration: none;
+        color:blue;
+        justify-content: space-between;
+        text-align: justify; 
+    }
+    p span{
+        color: black;
+        font-weight: bold;
+    }
+
+    article{
+        font-family: 'Arial' , 'sans-serif';
+        font-style: normal;
+        text-align: left;
+        font-size: 25px;
+        color: rgb(3, 3, 105);
+        padding: 10px;
+        margin: 10px 5px 20px 5px;
+        margin-left: 20px;
+    }
+    
+    .redes{
+        display: flex;
+        justify-content: space-between;
+    }
+    .direccion{
+        font-family: 'Arial' , 'sans-serif';
+        font-style: normal;
+        text-align: left;
+        font-size: 20px;
+        color: rgb(3, 3, 105);
+        padding: 10px;
+        margin: 10px 5px 20px 5px;
+        margin-left: 20px;
+        text-align: justify;
+    }
+
+    .container-1{
+        background-color: grey;
+        max-height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .retrato-oil{
+        max-width: 50%;
+        border: solid 2px;
+        margin-left: 5px;
+        margin-right: 5px;
+        background-color: gray;
+        object-fit: fill;
+        aspect-ratio: auto;
+
+    }
+
+    .area-2{
+        background-color: none;
+        max-width: 50%;
+    }
+
+    .container-2{
+        background-color: lightgray;
+        min-height: auto;
+        display: grid;
+        justify-items: center;
+        justify-content: start;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+    .div-1, .div-2, .div-3, .div-4{
+        background-color: none;
+
+    }
+
+    /* TRATAMIENTO DE IMAGENES */
+
+    .retrato-oil{
+        max-width: 100%;
+        border: solid 2px;
+        background-position: center;
+
+    }
+    .logos{
+        height: 100px;
+        display: flex;
+        justify-content: start;
+        width: 100%; 
+        min-height: 100px;
+        max-height: 100%;
+        margin-bottom: 5px;
+    }
+
+    .logo-lubri{
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        width: 120px;
+        transition-property: all;
+        transition-duration: 2s;
+    }
+
+    .grafico{
+        max-width: 70%;
+        margin-left: 5px;
+        margin-right: 5px;
+        border: 2px dashed blue;
+    }
+    .ipeman{
+        max-width: 50%;
+        margin-top:10px;
+        border-color: black;
+        border-style: groove;
+        border-width: 5px;
+    }
+    .flushing-1{
+        max-width: 50%;
+        margin-top:10px;
+        border-color: black;
+        border-style: groove;
+        border-width: 5px;
+    }
+    /* VIDEOS YOUTUBE */
+    .empresa{
+        max-width: 100%;
+        object-fit: contain;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        }
+    .oil{
+        max-width: 90%;
+        object-fit: contain;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    footer{
+        background-color: whitesmoke;
+        margin-top:40px;
+        
+    }
+    @media (min-width: 500px){
+        .container-1{
+            background-color: whitesmoke;
+            text-align: justify;
+        }
+
+        .container-2{
+            background-color: whitesmoke;
+            text-align: justify;
+        }
+    }
+
+    @media (min-width:768px){
+        body, header{
+            background-color: lightgray;
+        }
+        .container-1{
+            background-color: lightgray;
+        }
+        footer{
+            background-color: lightgray;
+        }
+        .container-2{
+            background-color: lightgray;
+        }
+    }
+    @media (min-width:1280px){
+        body, header{
+            background-color: white;
+        }
+        .container-1{
+            background-color: white;
+        }
+        footer{
+            background-color: white;
+        }
+        .container-2{
+            background-color: white;
+        }
+    }
+    /* Animaciones Logo */
+    header:hover img{
+        transform:rotate(360deg);
+        
+    }

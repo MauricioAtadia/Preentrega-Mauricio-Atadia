@@ -1,0 +1,12 @@
+//**Mixin**//
+
+@mixin direccion ($color, $padding){
+    color: $color;
+    padding: $padding
+}
+
+.direccion{
+    @include direccion (black, 25px );
+    font-size: 35px;
+    text-align: center;
+}
